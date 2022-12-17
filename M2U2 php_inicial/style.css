@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(231, 203, 203);
+    padding: 1em;
+    margin: 1em;
+}
+
+.botonera_princ {
+    background-color: white; 
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.botonera_princ ul {
+list-style: none;
+display: flex;
+gap: 80px;
+}
+
+.productos_descripcion img {
+    width: 300px;
+}
