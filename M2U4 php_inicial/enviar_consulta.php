@@ -5,6 +5,13 @@ $apellido_form = $_POST['apellido'];
 $edad_form = $_POST['edad'];
 $mensaje_form = $_POST['mensaje'];                   
 
+
+//Envio de mail
+$cuerpo_mail = "Nombre: ". $nombre_form. "Apellido: " . $apellido_form . "Edad: " . $edad_form . "Mensaje: " . $mensaje_form;
+
+mail("mariojbarberis@hotmail.com","Recetas desde mi sitio web", $cuerpo_mail);
+
+
 //Conectamos a BASE DE DATOS
 //Conectamos con una funcion de php y lo guardamos en una variable (localhost,usuario,contraseña,nombrebd)
 $conexion = mysqli_connect ("localhost", "root", "", "php_inicial") or exit ("No se pudo conectar");
