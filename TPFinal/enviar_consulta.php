@@ -18,10 +18,10 @@ mail("mariojbarberis@hotmail.com","Registros a promos", $cuerpo_mail);
 /* $conexion = mysqli_connect ("localhost", "root", "", "php_inicial") or exit ("No se pudo conectar"); */
 
 
-$conexion = mysqli_connect ("localhost", "root", "", "php_inicial") or exit ("No se puede conectar");
+$conexion = mysqli_connect ("localhost", "id19044906_winchester", "lbxz_]WYw9)Cw9id", "id19044906_mariobarberis") or exit ("No se puede conectar");
 
 //esto permite escribir la consulta y enviarlo a la tabla correpondiente de la bd.
-mysqli_query ($conexion, "INSERT INTO consultas VALUES (DEFAULT, '$nombre_form', '$apellido_form', '$edad_form', '$email_form' )" );
+mysqli_query ($conexion, "INSERT INTO tpfinal VALUES (DEFAULT, '$nombre_form', '$apellido_form', '$edad_form', '$email_form' )" );
 mysqli_close($conexion);
 
 header("Location: contacto.php?ok");

@@ -52,7 +52,7 @@ if (isset($_GET['productos'])) {
     <h3> <?php echo $ingrediente; ?> </h3>
     <h3> <?php echo $precio; ?> </h3>
     <div class="contenedorimg">
-        <img src="<?php echo $img ?>" alt="<?php echo $nombre ?>">
+        <img src="<?php echo $img ?>" >
     </div>
 </div>
 
