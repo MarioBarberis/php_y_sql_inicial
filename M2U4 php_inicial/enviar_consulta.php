@@ -14,7 +14,11 @@ mail("mariojbarberis@hotmail.com","Recetas desde mi sitio web", $cuerpo_mail);
 
 //Conectamos a BASE DE DATOS
 //Conectamos con una funcion de php y lo guardamos en una variable (localhost,usuario,contraseña,nombrebd)
-$conexion = mysqli_connect ("localhost", "root", "", "php_inicial") or exit ("No se pudo conectar");
+
+/* $conexion = mysqli_connect ("localhost", "root", "", "php_inicial") or exit ("No se pudo conectar"); */
+
+
+$conexion = mysqli_connect ("localhost", "id19044906_mario", "CzZj2qj+02n|]%3q", "id19044906_phpinicial") or exit ("No se puede conectar");
 
 //esto permite escribir la consulta y enviarlo a la tabla correpondiente de la bd.
 mysqli_query ($conexion, "INSERT INTO consultas VALUES (DEFAULT, '$nombre_form', '$apellido_form', '$edad_form', '$mensaje_form' )" );
